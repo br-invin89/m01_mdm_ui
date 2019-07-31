@@ -1,0 +1,27 @@
+<form [formGroup]="addForm" (ngSubmit)="onSave()" novalidate>
+	<hr/>
+	<h4>Add Form</h4>
+	<div class="row">
+		<mat-form-field class="col" [ngClass]="routeAnimationsElements">
+			<input matInput formControlName="code" placeholder="Code"/>
+		</mat-form-field>
+	</div>
+	<div class="row">
+		<mat-form-field class="col" [ngClass]="routeAnimationsElements">
+			<input matInput formControlName="name" placeholder="Name"/>
+		</mat-form-field>		
+	</div>
+	<div class="row">
+		<mat-form-field class="col" [ngClass]="routeAnimationsElements">
+			<input matInput formControlName="nameEn" placeholder="Name(En)"/>
+		</mat-form-field>	
+	</div>
+	<div class="row">
+		<div class="col buttons d-flex justify-content-between pad">
+			<button type="submit" mat-raised-button color="primary" 
+				[ngClass]="routeAnimationsElements">
+				Save New
+			</button>
+		</div>		
+	</div>
+</form>

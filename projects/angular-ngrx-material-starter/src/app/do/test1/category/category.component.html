@@ -1,0 +1,12 @@
+<mat-card>
+	<mat-card-title>Category</mat-card-title>
+	<mat-list>
+		<mat-list-item *ngFor="let c of categories">
+			<button mat-raised-button (click)="select(c)" [color]="selectedCategory.code==c.code?'accent':''">
+				<span>{{c.name}}</span>&nbsp;
+				<span class="small" style="color: #4f4f4f; font-size: 0.8em;">Code:&nbsp;{{c.code}}</span>
+			</button>
+		</mat-list-item>
+	</mat-list>
+	<do-test1-category-add-form></do-test1-category-add-form>
+</mat-card>

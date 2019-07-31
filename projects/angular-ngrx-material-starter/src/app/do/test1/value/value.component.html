@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-title>Value</mat-card-title>
+  <mat-list>
+    <mat-list-item *ngFor="let v of values">
+      <button mat-raised-button (click)="select(v)" [color]="selectedValue.code==v.code?'accent':''">
+        <span>{{v.name}}</span>&nbsp;
+        <span class="small" style="color: #4f4f4f; font-size: 0.8em;">Code:&nbsp;{{v.code}}</span>
+      </button>
+    </mat-list-item>
+  </mat-list>
+  <do-test1-value-add-form></do-test1-value-add-form>
+</mat-card>

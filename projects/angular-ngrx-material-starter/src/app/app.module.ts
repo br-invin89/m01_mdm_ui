@@ -19,7 +19,7 @@ import { AppComponent } from './app/app.component';
     SharedModule,
 
     // app
-    AppRoutingModule
+    AppRoutingModule,    
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent]
